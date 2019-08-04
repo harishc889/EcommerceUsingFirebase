@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/im4">
+
+
+    <EditText
+        android:id="@+id/mobileno1"
+        android:layout_width="280dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="15dp"
+        android:hint="Enter Phone"
+        android:layout_marginTop="140dp"
+        android:background="#00E78585"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:inputType="number"
+        android:textColor="#FFEB3B"
+        android:textColorLink="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="280dp"
+        android:layout_height="41dp"
+
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/lock"
+        android:hint="Enter Password"
+        android:inputType="textPersonName"
+        android:textColor="#FFEB3B"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobileno1" />
+
+    <EditText
+
+        android:id="@+id/editText2"
+        android:layout_width="280dp"
+
+        android:layout_height="46dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/lock"
+        android:hint="Retype Password"
+        android:inputType="textPersonName"
+        android:textColor="#FFEB3B"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password1" />
+
+
+    <Button
+        android:id="@+id/createacc1"
+        android:layout_width="280dp"
+        android:layout_height="33dp"
+
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/com_facebook_button_like_background"
+        android:text="SIGNUP"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <Button
+        android:id="@+id/login2"
+        android:layout_width="280dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:background="#303cef"
+        android:text="login"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createacc1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="280dp"
+        android:layout_height="83dp"
+
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="52dp"
+        android:background="#5F34D5"
+        android:text="Sign in to access your Orders, Wishlist and Recommendations"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="280dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bs" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="280dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Enter Your Name  "
+        android:inputType="textPersonName"
+        android:textColor="#FFEB3B"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+</android.support.constraint.ConstraintLayout>

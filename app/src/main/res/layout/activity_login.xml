@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@drawable/im2"
+    tools:context=".LoginAndsignup.Login">>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="280dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="29dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bs" />
+
+    <EditText
+        android:id="@+id/mobileno2"
+        android:layout_width="280dp"
+        android:layout_height="36dp"
+
+        android:layout_marginTop="184dp"
+        android:background="#F37575"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:hint="Phone NO."
+        android:inputType="number"
+        android:pointerIcon="cell"
+        android:textColor="#131312"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/password2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password2"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="32dp"
+        android:background="#F37575"
+        android:drawableLeft="@drawable/lock"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:textColor="#131212"
+        android:textSize="24sp"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobileno2" />
+
+    <CheckBox
+        android:id="@+id/checkbox_admin"
+        android:layout_width="100dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="48dp"
+        android:background="#D8C4C4"
+        android:text="login as admin"
+        app:layout_constraintStart_toEndOf="@+id/rememberme"
+        app:layout_constraintTop_toBottomOf="@+id/password2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/loginacc1"
+        android:layout_width="280dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="41dp"
+        android:background="@color/dot_dark_screen1"
+        android:baselineAligned="false"
+        android:text="LOGIN"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_admin" />
+
+    <CheckBox
+        android:id="@+id/rememberme"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="48dp"
+        android:background="#D8C4C4"
+
+        android:text="rememberme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password2" />
+
+</android.support.constraint.ConstraintLayout>

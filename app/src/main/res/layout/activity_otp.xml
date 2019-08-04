@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/im2"
+    tools:context=".LoginAndsignup.OTP">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="280dp"
+        android:layout_height="79dp"
+
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bs" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="163dp"
+
+        android:layout_height="70dp"
+
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="49dp"
+        android:text="Send OTP"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="280dp"
+        android:layout_height="38dp"
+
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:background="#FCF7F8"
+        android:ems="10"
+        android:hint="Enter otp"
+        android:inputType="number"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="167dp"
+        android:layout_height="54dp"
+
+
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="40dp"
+        android:text="Check"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+</android.support.constraint.ConstraintLayout>
